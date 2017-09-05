@@ -1,0 +1,12 @@
+{% extends 'blog/base_post.html' %}
+{% block content_post %}
+    <center>
+    <form action="/add_post/" method="post">
+        <label> Title : </label>
+        <input type="text" name="title"><br>
+        <label> Content : </label>
+        <textarea type="text" name="text" placeholder="Content dari tulisan"></textarea><br>
+        <input type="submit" value="POST!">
+    </form>
+    </center>
+{% endblock %}
